@@ -1,5 +1,4 @@
-# FIND THE ONE
-#### Video Demo:  https://youtu.be/c0JN37PSSoQ
+# EYES 4 NUMBERS
 #### Description: Built with HTML, CSS and Javascript, this project is a simple number-finding game to kill time and relax.
 
 ### How to run the game:
