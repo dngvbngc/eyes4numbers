@@ -28,3 +28,5 @@ def scoreboard():
     rows = db.execute("SELECT * FROM scores ORDER BY time_played;")
     return render_template("scoreboard.html", rows=rows)
 
+if __name__ == "__main__":
+    app.run()
