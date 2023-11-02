@@ -3,7 +3,7 @@
 #### Description: Built with HTML, CSS and Javascript, this project is a simple number-finding game to kill time and relax.
 
 ### How to run the game:
-
+To download the necessary packages, run `pip install -r -requirements.txt` (Windows) or `pip3 install -r -requirements.txt` (Linux) in your terminal.
 Run the command `flask run` in this directory and open the link that appears on any web browser.
 
 ### How to play the game:
