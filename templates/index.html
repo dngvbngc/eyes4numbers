@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class="title">
+	    <h1 id="title">Can you find the 1?</h1>
+    </div>
+	<div id="timer"></div>
+	<canvas id="board"></canvas>
+	<form>
+		<div id="hint"></div>
+		<button type="submit" id="hintbutton">Show hint</button>
+	</form>
+	<form>
+		<button type="submit" id="replaybutton" hidden>Play again</button>
+	</form>
+	<form action="/record">
+		<input type="hidden" name="time" id="time">
+		<button type="submit" id="recordbutton" hidden>Record score</button>
+	</form>
+	<form action="/scoreboard">
+		<button type="submit">View scoreboard</button>
+	</form>
+{% endblock %}

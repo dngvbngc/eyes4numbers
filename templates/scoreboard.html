@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class="title">
+	    <h1 id="title">Scoreboard</h1>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in rows %}
+                    <tr>
+                        <td> {{ row.player }} </td>
+                        <td> {{ row.time_played }} </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <form action="/">
+        <button>Play again</button>
+    </form>
+{% endblock %}
