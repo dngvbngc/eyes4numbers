@@ -38,9 +38,3 @@ Once the game is finished, you can record your score by clicking the "Record sco
 
 - Change the game board's color: go to `script.js` and modify the `board.fillColor()` methods.
 - Change the maximum number on the board: go to `script.js` and modify the `maxNum` variable.
-
-
-
-
-
-# number-finder
