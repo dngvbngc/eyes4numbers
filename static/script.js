@@ -3,7 +3,7 @@ var minNum = 1;
 var total_row;
 var total_col;
 var blockSize;
-var fontSize;
+var contextFont;
 var heightBuffer;
 var board;
 var context;
@@ -60,8 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Set number color and position
     heightBuffer = blockSize * 1.5;
-    fontSize = blockSize * 0.75;
-    context.font = fontSize + "px Arial";
+    contextFont = blockSize * 0.75 + "px Arial";
+    context.font = contextFont;
     context.fillStyle = "green";
 
     for (let i = minNum; i < maxNum + 1; i++) {
@@ -123,8 +123,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       context.fillStyle = "#C1E1C1";
       context.fillRect(0, 0, board.width, board.height);
-      context.font = "22px Times New Roman";
-      context.fillStyle = "white";
+      context.font = contextFont;
+      context.fillStyle = "red";
       context.textAlign = "center";
       context.fillText(
         "You found all the numbers!",
