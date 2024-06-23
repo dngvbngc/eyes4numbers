@@ -1,60 +1,64 @@
 body {
-	text-align: center;
+  text-align: center;
+  height: 100%;
 }
 
 #title {
-    color: green;
-    font-size: 30px;
+  color: green;
+  font-size: 30px;
 }
 
 #timer {
-    padding-bottom: 10px;
-    font-size: 18px;
+  padding-bottom: 10px;
+  font-size: 18px;
 }
 
 #hint {
-    font-size: 18px;
-    padding-bottom: 5px;
+  font-size: 18px;
+  padding-bottom: 5px;
 }
 
 table {
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Times New Roman", Times, serif;
-    background-color: transparent;
-    margin-bottom: 1rem;
-    width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Times New Roman", Times, serif;
+  background-color: transparent;
+  margin-bottom: 1rem;
+  width: 50%;
 }
 
 table th,
 table td {
-    padding: 0.5rem;
-    vertical-align: middle;
-    background-color: rgb(193, 225, 193, 0.3);
+  padding: 0.5rem;
+  vertical-align: middle;
+  background-color: rgb(193, 225, 193, 0.3);
 }
 
 tbody tr:nth-of-type(odd) {
-    background-color: rgb(193, 225, 193, 0.3)
+  background-color: rgb(193, 225, 193, 0.3);
 }
 
 button {
-    font-family: "Times New Roman", Times, serif;
-    background-color: white;
-    border-color: rgb(193, 225, 193);
-    padding: 3px 3px;
-    text-align: center;
-    font-size: 18px;
-    width: 12%;
+  font-family: "Times New Roman", Times, serif;
+  background-color: white;
+  border-color: rgb(193, 225, 193);
+  padding: 3px;
+  margin-bottom: 3px;
+  text-align: center;
+  font-size: 18px;
+  width: 20%;
+  min-width: max-content;
 }
 
 input {
-    padding: 5px;
-    width: 24%;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 18px;
+  padding: 5px;
+  width: 24%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
 }
 
 footer {
-    text-align: right;
-    padding: 5px;
+  text-align: right;
+  padding: 5px;
+  bottom: 0;
 }
