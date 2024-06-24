@@ -58,7 +58,9 @@ input {
 }
 
 footer {
-  text-align: right;
-  padding: 5px;
-  bottom: 0;
+  position: absolute;
+  left: 80%;
+  bottom: 10px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
