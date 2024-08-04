@@ -1,4 +1,4 @@
-var maxNum = 100;
+var maxNum = 2;
 var minNum = 1;
 var total_row;
 var total_col;
