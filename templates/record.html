@@ -1,18 +1,18 @@
-{% extends "layout.html" %}
-
-{% block body %}
-    <div class="title">
-	    <h1 id="title">Record your score</h1>
-    </div>
-    <p>Time: {{ time }}</p>
-	<form action="/record" method="post">
-		<input name="player" id="player" type="text" placeholder="Name">
-        <input type="hidden" name="time" id="time" value="{{ time }}">
-		<button type="submit" id="recordsubmit" onclick="confirmRecord()">Record score</button>
-        <script>
-            function confirmRecord() {
-              alert("Your score has been recorded!");
-            }
-        </script>
-	</form>
+{% extends "layout.html" %} {% block body %}
+<div class="title">
+  <h1 id="title">Record your score</h1>
+</div>
+<p>Time: {{ time }}</p>
+<form action="/record" method="post">
+  <input name="player" id="player" type="text" placeholder="Name" />
+  <input type="hidden" name="time" id="time" value="{{ time }}" />
+  <button type="submit" id="recordsubmit" onclick="confirmRecord()">
+    Record score
+  </button>
+  <script>
+    function confirmRecord() {
+      alert("Recording score...\nPlease wait to be redirected");
+    }
+  </script>
+</form>
 {% endblock %}
