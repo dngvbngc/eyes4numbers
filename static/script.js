@@ -55,8 +55,28 @@ document.addEventListener("DOMContentLoaded", function () {
     context = board.getContext("2d");
 
     // Set background
-    context.fillStyle = "#C1E1C1";
-    context.fillRect(0, 0, board.width, board.height);
+    context.fillStyle = "rgba(193, 225, 193, 0.5)";
+    // Create rounded rectangle path
+    const radius = 20; // Adjust this for more or less rounding
+    context.beginPath();
+    context.moveTo(radius, 0);
+    context.lineTo(board.width - radius, 0);
+    context.quadraticCurveTo(board.width, 0, board.width, radius);
+    context.lineTo(board.width, board.height - radius);
+    context.quadraticCurveTo(
+      board.width,
+      board.height,
+      board.width - radius,
+      board.height
+    );
+    context.lineTo(radius, board.height);
+    context.quadraticCurveTo(0, board.height, 0, board.height - radius);
+    context.lineTo(0, radius);
+    context.quadraticCurveTo(0, 0, radius, 0);
+    context.closePath();
+
+    // Fill the background with the rounded rectangle
+    context.fill();
 
     // Set number color and position
     heightBuffer = blockSize * 1.5;
