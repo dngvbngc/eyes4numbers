@@ -6,12 +6,20 @@
 <form action="/record" method="post">
   <input name="player" id="player" type="text" placeholder="Name" />
   <input type="hidden" name="time" id="time" value="{{ time }}" />
-  <button type="submit" id="recordsubmit" onclick="confirmRecord()">
+  <button type="submit" id="recordsubmit" onclick="confirmRecord(event)">
     Record score
   </button>
   <script>
-    function confirmRecord() {
-      alert("Recording score...\nPlease wait to be redirected");
+    function confirmRecord(event) {
+      if (document.querySelector("#player").value === "") {
+        event.preventDefault();
+        alert("Please enter a name to record your score.");
+      } else if (document.querySelector("#time").value === "None") {
+        event.preventDefault();
+        alert("Please finish the game to record your score.");
+      } else {
+        alert("Recording score...\nPlease wait to be redirected");
+      }
     }
   </script>
 </form>
