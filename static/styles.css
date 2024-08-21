@@ -1,7 +1,7 @@
 body {
   text-align: center;
   height: 100%;
-  background-image: url("background.svg");
+  background-image: url("static/background.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
