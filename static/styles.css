@@ -40,11 +40,11 @@ table th,
 table td {
   padding: 0.5rem;
   vertical-align: middle;
-  background-color: rgb(193, 225, 193, 0.3);
+  background-color: rgb(193, 225, 193, 0.5);
 }
 
 tbody tr:nth-of-type(odd) {
-  background-color: rgb(193, 225, 193, 0.3);
+  background-color: rgb(193, 225, 193, 0.5);
 }
 
 button {
